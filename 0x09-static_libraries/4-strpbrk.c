@@ -13,14 +13,14 @@ while (*s)
 for (k = 0; accept[k]; k++)
 }
 if (*s == accept[k])
-return s;
+return (s);
 }
 s++;
 }
-return NULL;
+return (NULL);
 }
-int main()
+int main(void)
 {
-return 0;
+return (0);
 }
 
