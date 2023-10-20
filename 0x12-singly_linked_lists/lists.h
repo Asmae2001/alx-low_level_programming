@@ -1,14 +1,13 @@
 #ifndef LINKED
-#define LINKED 
+#define LINKED
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
 /**
- * struct list_s - singly linked list 
+ * struct list_s - singly linked list
  * @str: string - (malloc ' ed string)
- * @len lenght of the string 
- * @next : points to next node 
- *
+ * @len lenght of the string
+ * @next : points to next node
  * Description: singly list node structure
  */
 typedef struct list_s
