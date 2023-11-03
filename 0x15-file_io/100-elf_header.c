@@ -2,7 +2,6 @@
  * File: 100-elf_header.c
  * Auth: Brennan D Baraban
  */
-
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -107,7 +106,7 @@ printf("<unknown: %x>\n", e_ident[EI_CLASS]);
  */
 void print_version(unsigned char *e_ident)
 {
-printf("  Version:                           %d",e_ident[EI_VERSION]);
+printf("  Version:                           %d", e_ident[EI_VERSION]);
 switch (e_ident[EI_VERSION])
 {
 case EV_CURRENT:
@@ -167,7 +166,7 @@ printf("<unknown: %x>\n", e_ident[EI_OSABI]);
  */
 void print_abi(unsigned char *e_ident)
 {
-printf("  ABI Version:                       %d\n",e_ident[EI_ABIVERSION]);
+printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]);
 }
 /**
  * print_type - Prints the type of an ELF header.
