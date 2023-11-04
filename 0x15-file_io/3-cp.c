@@ -51,7 +51,7 @@ free(buffer);
 close_file(from);
 exit(EXIT_FAILURE);
 }
-do{
+do {
 r = read(from, buffer, BUFFER_SIZE);
 if (r == -1)
 {
@@ -70,7 +70,7 @@ close_file(from);
 close_file(to);
 exit(EXIT_FAILURE);
 }
-}while (r > 0);
+} while (r > 0);
 free(buffer);
 close_file(from);
 close_file(to);
